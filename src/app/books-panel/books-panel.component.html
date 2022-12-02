@@ -1,0 +1,11 @@
+<div *ngIf="loading">
+  Loading...
+</div>
+<div *ngIf="error">
+  Error :(
+</div>
+<div *ngIf="books">
+  <div *ngFor="let book of books">
+    <p>{{ book.author }}: {{ book.title }}    Price:${{book.price}}</p>
+  </div>
+</div>
